@@ -1,0 +1,37 @@
+npx create-react-app project1
+
+react bootstrap:
+npm install react-bootstrap bootstrap@5.1.3
+
+index:
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+npm install axios
+
+backend:
+npm init
+
+npm install mysql
+
+npm install express
+
+npm install bluebird
+
+npm install nodemon
+
+"start": "nodemon src/main.js"
+
+npm install cors
+
+user:
+const mysql = require("mysql");
+const Promise = require("bluebird");
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+
+main:
+const express = require("express");
+const app = express();
+app.use(express.json());
+
+
+
